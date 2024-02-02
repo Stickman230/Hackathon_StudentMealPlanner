@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>2e91d9ae-64d9-4ae7-9e80-6ac659f02d46</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>StudentMealPlanner</Name>
+    <RootNamespace>StudentMealPlanner</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="helpers.py" />
+    <Compile Include="NutritionXAPI\MealPlanProducer.py" />
+    <Compile Include="NutritionXAPI\nutritionXGet.py" />
+    <Compile Include="Recipes\createMatchedRecipes.py" />
+    <Compile Include="Recipes\RandomRecipe.py" />
+    <Compile Include="Recipes\recipe-modifier.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="helper.py" />
+    <Compile Include="StudentMealPlanner\database\AddMethods.py" />
+    <Compile Include="StudentMealPlanner\database\database.py" />
+    <Compile Include="StudentMealPlanner\database\db_add_content.py" />
+    <Compile Include="StudentMealPlanner\database\GetMethods.py" />
+    <Compile Include="StudentMealPlanner\__init__.py" />
+    <Compile Include="StudentMealPlanner\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="frontend\" />
+    <Folder Include="frontend\frontend\" />
+    <Folder Include="frontend\frontend\public\" />
+    <Folder Include="frontend\frontend\src\" />
+    <Folder Include="frontend\frontend\src\components\" />
+    <Folder Include="NutritionXAPI\" />
+    <Folder Include="Recipes\" />
+    <Folder Include="StudentMealPlanner\" />
+    <Folder Include="StudentMealPlanner\database\" />
+    <Folder Include="StudentMealPlanner\static\" />
+    <Folder Include="StudentMealPlanner\static\content\" />
+    <Folder Include="StudentMealPlanner\static\css\" />
+    <Folder Include="StudentMealPlanner\static\fonts\" />
+    <Folder Include="StudentMealPlanner\static\js\" />
+    <Folder Include="StudentMealPlanner\static\css\" />
+    <Folder Include="StudentMealPlanner\static\scripts\" />
+    <Folder Include="StudentMealPlanner\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="frontend\.DS_Store" />
+    <Content Include="frontend\frontend\.gitignore" />
+    <Content Include="frontend\frontend\package-lock.json" />
+    <Content Include="frontend\frontend\package.json" />
+    <Content Include="frontend\frontend\public\favicon.ico" />
+    <Content Include="frontend\frontend\public\index.html" />
+    <Content Include="frontend\frontend\public\logo192.png" />
+    <Content Include="frontend\frontend\public\logo512.png" />
+    <Content Include="frontend\frontend\public\manifest.json" />
+    <Content Include="frontend\frontend\public\robots.txt" />
+    <Content Include="frontend\frontend\README.md" />
+    <Content Include="frontend\frontend\src\App.css" />
+    <Content Include="frontend\frontend\src\App.js" />
+    <Content Include="frontend\frontend\src\App.test.js" />
+    <Content Include="frontend\frontend\src\components\DropdownSearch.js" />
+    <Content Include="frontend\frontend\src\components\ItemSearchAndDisplayPage.js" />
+    <Content Include="frontend\frontend\src\components\recipeData.css" />
+    <Content Include="frontend\frontend\src\components\RecipeData.js" />
+    <Content Include="frontend\frontend\src\index.css" />
+    <Content Include="frontend\frontend\src\index.js" />
+    <Content Include="frontend\frontend\src\logo.svg" />
+    <Content Include="frontend\frontend\src\reportWebVitals.js" />
+    <Content Include="frontend\frontend\src\setupTests.js" />
+    <Content Include="frontend\package-lock.json" />
+    <Content Include="frontend\package.json" />
+    <Content Include="Recipes\db-recipes-modified.json" />
+    <Content Include="StudentMealPlanner\database\db-recipes-modified.json" />
+    <Content Include="StudentMealPlanner\database\db-recipes.json" />
+    <Content Include="requirements.txt" />
+    <Content Include="StudentMealPlanner\database\README.md" />
+    <Content Include="StudentMealPlanner\database\sqlite_db" />
+    <Content Include="StudentMealPlanner\static\content\bootstrap.css" />
+    <Content Include="StudentMealPlanner\static\content\bootstrap.min.css" />
+    <Content Include="StudentMealPlanner\static\content\site.css" />
+    <Content Include="StudentMealPlanner\static\css\main.201207f9.css" />
+    <Content Include="StudentMealPlanner\static\css\main.201207f9.css.map" />
+    <Content Include="StudentMealPlanner\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="StudentMealPlanner\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="StudentMealPlanner\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="StudentMealPlanner\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="StudentMealPlanner\static\js\787.9e9f4ffd.chunk.js" />
+    <Content Include="StudentMealPlanner\static\js\787.9e9f4ffd.chunk.js.map" />
+    <Content Include="StudentMealPlanner\static\js\main.fa58d145.js" />
+    <Content Include="StudentMealPlanner\static\js\main.fa58d145.js.LICENSE.txt" />
+    <Content Include="StudentMealPlanner\static\js\main.fa58d145.js.map" />
+    <Content Include="StudentMealPlanner\static\favicon.ico" />
+    <Content Include="StudentMealPlanner\static\scripts\bootstrap.js" />
+    <Content Include="StudentMealPlanner\static\scripts\bootstrap.min.js" />
+    <Content Include="StudentMealPlanner\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="StudentMealPlanner\static\scripts\jquery-1.10.2.js" />
+    <Content Include="StudentMealPlanner\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="StudentMealPlanner\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="StudentMealPlanner\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="StudentMealPlanner\static\scripts\jquery.validate.js" />
+    <Content Include="StudentMealPlanner\static\scripts\jquery.validate.min.js" />
+    <Content Include="StudentMealPlanner\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="StudentMealPlanner\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="StudentMealPlanner\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="StudentMealPlanner\static\scripts\respond.js" />
+    <Content Include="StudentMealPlanner\static\scripts\respond.min.js" />
+    <Content Include="StudentMealPlanner\static\scripts\_references.js" />
+    <Content Include="StudentMealPlanner\templates\about.html" />
+    <Content Include="StudentMealPlanner\templates\contact.html" />
+    <Content Include="StudentMealPlanner\templates\layout.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

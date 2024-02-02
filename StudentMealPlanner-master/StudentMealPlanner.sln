@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "StudentMealPlanner", "StudentMealPlanner\StudentMealPlanner.pyproj", "{2E91D9AE-64D9-4AE7-9E80-6AC659F02D46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E91D9AE-64D9-4AE7-9E80-6AC659F02D46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E91D9AE-64D9-4AE7-9E80-6AC659F02D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E91D9AE-64D9-4AE7-9E80-6AC659F02D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E91D9AE-64D9-4AE7-9E80-6AC659F02D46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7903C3DD-50D2-486C-BB5C-582E5ACC0C97}
+	EndGlobalSection
+EndGlobal

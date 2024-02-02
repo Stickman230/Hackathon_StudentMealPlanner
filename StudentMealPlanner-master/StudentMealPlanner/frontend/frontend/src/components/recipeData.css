@@ -1,0 +1,29 @@
+.recipe-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ingredients-container,
+  .instructions-container,
+  .nutrition-info,
+  .comments-container,
+  .tags-container {
+    margin-top: 20px;
+  }
+  
+  .ingredients-container ul,
+  .tags-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ingredients-container li,
+  .tags-container li {
+    margin-bottom: 5px;
+  }
+  
+  
