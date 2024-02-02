@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function handleView(){
+                if(options.length!==1){
+                    //it means the user hasnt selected a recipe
+                    alert("Please select a recipe");
+                    return
+                }
+                console.log('id to be added ')
+                console.log(options[0].index);
+                setRecipeNumber(options[0].index);
+            }
+    </script>
+</head>
+<body>
+    <div>
+        <label for="fruitInput">Select a Fruit:</label>
+
+          <input list="fruits" id="fruitInput" name="fruit" placeholder="Type to search..." onChange={(e)=>setSearchQuery(e.target.value)}/>
+
+          <datalist id="fruits">
+              {/* <option value="Apple"/>
+              <option value="Banana"/>
+              <option value="Orange"/>
+              <option value="Grape"/> */}
+
+              {options.map((option) => (
+
+                  <option value={option.title}/>
+              ))}
+          </datalist>
+          <button onClick={()=>handleView()}>View</button>
+          {/* <button onClick={()=>{console.log(options)}}>View</button> */}
+      </div>
+    
+</body>
+</html>
